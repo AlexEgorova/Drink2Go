@@ -1,0 +1,55 @@
+.copyright {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  width: 280px;
+  min-height: 66px;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 40px;
+  }
+}
+
+.copyright__text {
+  margin-right: 3px;
+  font-size: 12px;
+  line-height: 133%;
+  color: $base-grey;
+}
+
+.copyright__link {
+  font-size: 12px;
+  line-height: 133%;
+  color: $base-grey;
+
+  &:hover,
+  &:focus {
+    color: $base-primary;
+    fill: $base-primary;
+  }
+
+  &:active {
+    color: $primary-darker;
+  }
+}
+
+.copyright__link svg {
+  fill: $base-grey;
+
+  &:hover,
+  &:focus {
+    fill: $base-primary;
+  }
+
+  &:active {
+    fill: $primary-darker;
+  }
+}
+
+.copyright__icon {
+  width: 12px;
+  height: 16px;
+}

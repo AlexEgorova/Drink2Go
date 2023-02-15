@@ -1,0 +1,83 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 240px;
+  height: 420px;
+  background-color: $base-white;
+  border-radius: 4px;
+
+  @media (min-width: $tablet-width) {
+    width: 349px;
+    height: 440px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 317px;
+    height: 460px;
+  }
+}
+
+.card__image {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 24px;
+  width: 130px;
+  height: 188px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 30px;
+  }
+}
+
+.card__info {
+  display: block;
+  margin-bottom: 16px;
+}
+
+.card__title {
+  @include main-title;
+  display: block;
+  font-size: 18px;
+  line-height: 178%;
+}
+
+.card__text {
+  display: block;
+  font-size: 14px;
+  line-height: 143%;
+}
+
+.card__buy {
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.card__price {
+  font-weight: $weight-semibold;
+  font-size: 20px;
+  line-height: 160%;
+}
+
+.card__button {
+  @include button-base;
+  width: 141px;
+  height: 36px;
+  padding: 0;
+  padding-left: 35px;
+  line-height: 143%;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 16px;
+    background-image: url(../../img/icon-union.svg);
+    top: 10px;
+    left: 20px;
+  }
+}

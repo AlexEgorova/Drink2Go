@@ -1,0 +1,34 @@
+// Global
+@import "./global/global.scss";
+@import "./global/variables.scss";
+@import "./global/fonts.scss";
+@import "./global/mixins.scss";
+
+//Blocks
+@import "./blocks/body.scss";
+@import "./blocks/header/header.scss";
+@import "./blocks/header/main-nav.scss";
+@import "./blocks/header/site-list.scss";
+@import "./blocks/header/nav-buttons.scss";
+@import "./blocks/header/logo.scss";
+@import "./blocks/main.scss";
+@import "./blocks/novelty.scss";
+@import "./blocks/swiper.scss";
+@import "./blocks/features.scss";
+@import "./blocks/catalog/catalog.scss";
+@import "./blocks/catalog/filter.scss";
+@import "./blocks/catalog/cost.scss";
+@import "./blocks/catalog/type-milk.scss";
+@import "./blocks/catalog/origin-country.scss";
+@import "./blocks/catalog/products.scss";
+@import "./blocks/catalog/sorting.scss";
+@import "./blocks/catalog/card.scss";
+@import "./blocks/catalog/pagination.scss";
+@import "./blocks/map.scss";
+@import "./blocks/footer/footer.scss";
+@import "./blocks/footer/social.scss";
+@import "./blocks/footer/menu.scss";
+@import "./blocks/footer/media.scss";
+@import "./blocks/footer/contacts.scss";
+@import "./blocks/footer/copyright.scss";
+@import "./blocks/button.scss";

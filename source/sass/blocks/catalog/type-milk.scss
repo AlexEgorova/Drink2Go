@@ -1,0 +1,115 @@
+.type-milk {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 24px;
+  width: 280px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+    margin-left: 32px;
+    width: 210px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 30px;
+    margin-left: 0;
+  }
+}
+
+.type-milk__title {
+  margin-bottom: 22px;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
+}
+
+.type-milk__item {
+  margin-bottom: 22px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
+}
+
+.type-milk__input {
+  display: none;
+}
+
+.type-milk__label {
+  display: block;
+  position: relative;
+  font-size: 16px;
+  line-height: 24px;
+  padding-left: 34px;
+  cursor: pointer;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 2px solid $base-grey;
+  }
+
+  &::after {
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    content: "";
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: $base-white;
+  }
+}
+
+.type-milk__input:hover + .type-milk__label,
+.type-milk__input:focus + .type-milk__label {
+  &::before {
+    border-color: $primary-lighter;
+  }
+
+  &::after {
+    background-color: $primary-opacity;
+  }
+}
+
+.type-milk__input:disabled + .type-milk__label {
+  pointer-events: none;
+  color: $base-grey;
+
+  &::before {
+    border-color: $light-grey;
+  }
+}
+
+.type-milk__input:checked:disabled + .type-milk__label {
+  pointer-events: none;
+  color: $base-grey;
+
+  &::before {
+    border-color: $light-grey;
+  }
+
+  &::after {
+    background-color: $light-grey;
+  }
+}
+
+
+.type-milk__input:checked + .type-milk__label::before {
+  border-color: $base-primary;
+}
+
+.type-milk__input:checked + .type-milk__label::after {
+  background-color: $base-primary;
+}

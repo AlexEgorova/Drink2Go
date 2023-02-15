@@ -1,0 +1,54 @@
+.sorting {
+  @include wrapper;
+  display: flex;
+  margin-bottom: 17px;
+  align-items: center;
+  justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    justify-content: flex-end;
+    margin-right: 0;
+  }
+}
+
+.sorting__title {
+  @include legend-label;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+.sorting__select {
+  @include legend-label;
+  width: 167px;
+  height: 32px;
+  padding: 4px 20px 4px 10px;
+  color: $base-primary;
+  appearance: none;
+  border: none;
+  border-radius: 4px;
+  background-color: transparent;
+  background-image: url("../../img/frame-sort-open.svg");
+  background-repeat: no-repeat;
+  background-position: top 10px right 10px;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    outline: none;
+    background-color: $base-secondary;
+  }
+
+  &:active {
+    background-image: url("../../img/frame-sort-close.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.sorting__select:hover .sorting__option,
+.sorting__select:focus .sorting__option {
+  background-color: $base-white;
+  color: $base-black;
+  font-weight: $weight-normal;
+}
+

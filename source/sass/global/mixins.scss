@@ -1,0 +1,55 @@
+@mixin wrapper() {
+  min-width: 320px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 1440px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+@mixin main-title() {
+  font-family: $base-font;
+  font-weight: $weight-bold;
+  color: $base-black;
+}
+
+@mixin legend-label() {
+  font-family: $base-font;
+  font-weight: $weight-semibold;
+  font-size: 16px;
+  line-height: 150%;
+  color: $base-black;
+}
+
+@mixin badge() {
+  font-weight: $weight-bold;
+  font-size: 12px;
+  line-height: 133%;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $base-primary;
+}
+
+@mixin main-text() {
+  font-family: $base-font;
+  font-weight: $weight-normal;
+  color: $base-black;
+}
+
+@mixin button-base() {
+  background-color: $base-primary;
+  color: $base-white;
+}
+
+@mixin button-reset() {
+  background-color: $base-white;
+  color: $base-primary;
+}
