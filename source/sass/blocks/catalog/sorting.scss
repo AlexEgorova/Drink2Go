@@ -28,7 +28,7 @@
   border: none;
   border-radius: 4px;
   background-color: transparent;
-  background-image: url("../../img/frame-sort-open.svg");
+  background-image: url("../img/frame-sort-open.svg");
   background-repeat: no-repeat;
   background-position: top 10px right 10px;
   cursor: pointer;
@@ -40,7 +40,7 @@
   }
 
   &:active {
-    background-image: url("../../img/frame-sort-close.svg");
+    background-image: url("../img/frame-sort-close.svg");
     background-repeat: no-repeat;
   }
 }
@@ -51,4 +51,3 @@
   color: $base-black;
   font-weight: $weight-normal;
 }
-

@@ -1,5 +1,6 @@
 .footer__wrapper {
   @include wrapper;
+
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -63,4 +64,6 @@
   line-height: 143%;
   letter-spacing: 0.02em;
   color: $base-primary;
+  margin: 0;
+  padding: 0;
 }

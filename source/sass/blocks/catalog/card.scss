@@ -37,6 +37,7 @@
 
 .card__title {
   @include main-title;
+
   display: block;
   font-size: 18px;
   line-height: 178%;
@@ -46,6 +47,8 @@
   display: block;
   font-size: 14px;
   line-height: 143%;
+  margin: 0;
+  padding: 0;
 }
 
 .card__buy {
@@ -60,10 +63,13 @@
   font-weight: $weight-semibold;
   font-size: 20px;
   line-height: 160%;
+  margin: 0;
+  padding: 0;
 }
 
 .card__button {
   @include button-base;
+
   width: 141px;
   height: 36px;
   padding: 0;
@@ -76,7 +82,7 @@
     content: "";
     width: 20px;
     height: 16px;
-    background-image: url(../../img/icon-union.svg);
+    background-image: url("../img/icon-union.svg");
     top: 10px;
     left: 20px;
   }

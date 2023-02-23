@@ -17,6 +17,12 @@
   }
 }
 
+.origin-country__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 .origin-country__item {
   margin-bottom: 20px;
 
@@ -102,5 +108,3 @@
 .origin-country__input:checked + .origin-country__label::after {
   transform: translateX(16px);
 }
-
-

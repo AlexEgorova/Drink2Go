@@ -1,5 +1,6 @@
 .features__wrapper {
   @include wrapper;
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -35,6 +36,8 @@
 
 .features__list {
   margin: 0 auto;
+  list-style: none;
+  padding: 0;
   width: 280px;
   display: grid;
   grid-template-rows: repeat(4, 142px);
@@ -84,26 +87,26 @@
     &::before {
       content: "";
       position: absolute;
-      background: url(../../img/icon-speed.svg) no-repeat center;
+      background: url("../img/icon-speed.svg") no-repeat center;
       background-size: 52px 56px;
     }
   }
 
   &--fit {
     &::before {
-      background: url(../../img/icon-fit.svg) no-repeat center;
+      background: url("../img/icon-fit.svg") no-repeat center;
     }
   }
 
   &--energy {
     &::before {
-      background: url(../../img/icon-energy.svg) no-repeat center;
+      background: url("../img/icon-energy.svg") no-repeat center;
     }
   }
 
   &--ecology {
     &::before {
-      background: url(../../img/icon-ecology.svg) no-repeat center;
+      background: url("../img/icon-ecology.svg") no-repeat center;
     }
   }
 
@@ -122,6 +125,7 @@
 
 .features__subtitle {
   @include main-title;
+
   display: block;
   font-family: $base-font;
   font-size: 18px;
@@ -142,9 +146,12 @@
 
 .features__text {
   @include main-text;
+
   font-size: 14px;
   line-height: 143%;
   text-align: center;
+  margin: 0;
+  padding: 0;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;

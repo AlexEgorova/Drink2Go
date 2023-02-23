@@ -87,6 +87,9 @@
 .main-nav__list {
   display: flex;
   flex-direction: column;
+  list-style: none;
+  margin: 0;
+  padding: 0;
   position: absolute;
   top: 60px;
   right: 0;
