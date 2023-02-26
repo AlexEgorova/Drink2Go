@@ -47,6 +47,7 @@
   "type": "module",
   "dependencies": {
     "gulp-dart-sass": "^1.0.2",
+    "leaflet": "^1.9.3",
     "swiper": "^9.0.5"
   }
 }

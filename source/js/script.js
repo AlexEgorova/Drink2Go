@@ -3,8 +3,6 @@ const navToggle = document.querySelector('.main-nav__toggle');
 const mapImage = document.querySelector('.map__image');
 const mapLeaflet = document.querySelector('.map__leaflet');
 
-mapImage.classList.add('map__image--nojs');
-mapLeaflet.classList.add('map__leaflet--nojs');
 
 navMain.classList.remove('main-nav--nojs');
 
@@ -30,9 +28,13 @@ const swiper = new Swiper('.swiper', {
     el: '.swiper-pagination',
     clickable: true,
     bulletElement: 'button',
-    bulletActiveClass: '.swiper-pagination-bullet--current'
+    currentClass: `swiper-pagination-current`,
+    bulletActiveClass: 'swiper-pagination-bullet-active'
   },
 });
+
+mapImage.classList.add('map__image--nojs');
+mapLeaflet.classList.add('map__leaflet--nojs');
 
 const map = L.map("map").setView({
   lat: 59.96838,

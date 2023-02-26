@@ -15,6 +15,12 @@
   }
 }
 
+.media__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 .media__item {
   height: 32px;
   margin-bottom: 2px;
